@@ -1,19 +1,19 @@
 import React from "react";
-import Header from "./components/Header";
-import Services from "./components/Services";
-import About from "./components/About";
-import Parallax from "./components/Parallax";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import Galeria from "./pages/Galeria";
 
-function App() {
-  return (
-    <React.Fragment>
-      <Header />
-      <Services />
-      <hr />
-      <About />
-      <Parallax />
-    </React.Fragment>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Inicio} />
+          <Route exact path="/Galeria" component={Galeria} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

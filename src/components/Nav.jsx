@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../images/logo.jpg";
 import Menu from "../images/menu.png";
 
@@ -10,9 +11,9 @@ class Nav extends React.Component {
       <header>
         <nav className="navbar navbar-expand-lg fixed-top ">
           <div className="container">
-            <a href="#hero">
+            <Link to="/">
               <img src={Logo} className="logo" alt="logo" />
-            </a>
+            </Link>
 
             <button
               className="navbar-toggler"
@@ -32,29 +33,14 @@ class Nav extends React.Component {
             >
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="#hero">
-                    Home
-                  </a>
+                  <Link className="nav-link" to="/">
+                    Inicio
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#portfolio">
-                    Portafolio
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#sobre_mi">
-                    Sobre mi
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#habilidades">
-                    Habilidades
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#contacto">
-                    Contacto
-                  </a>
+                  <Link className="nav-link" to="/Galeria">
+                    Galeria
+                  </Link>
                 </li>
               </ul>
             </div>
