@@ -18,16 +18,15 @@ class About extends React.Component {
               Quienes <b>Somos</b>
             </h2>
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-              Mi nombre es Carlos Andres Mora y empecé en el desarrollo web hace
-              3 años, soy técnico en desarrollo de software y actualmente me
-              encuentro cursando Ingeniería de Sistemas e Informática en la
-              Universidad Nacional de Colombia. He hecho parte de varios
-              developer circles y he participado en colaboración de diferentes
-              proyectos, todo con el fin de ampliar mi conocimiento como
-              desarrollador. Tengo habilidades en:{" "}
+              Nuestro equipo de trabajo está dirigido por dos personas
+              encargadas del diseño y desarrollo web, donde ofrecemos a nuestros
+              clientes la mejor atención y calidad. En nuestra amplia variedad
+              de servicios personalizados se encuentran los siguientes:{" "}
               <b>
-                HTML, CSS, JavaScript, jQuery, Ajax, Nodejs y NPM, React, Php,
-                Mysql y Git.
+                Desarrollo web con las mejores tecnologías y la mejor
+                optimización, creación de logotipos, cartas de presentación,
+                afiches, marquillas, prendas personalizadas,mugs, tarjetas de
+                todo tipo. !ANÍMATE Y ADQUIERE NUESTROS SERVICIOS!
               </b>
             </p>
           </div>
@@ -47,7 +46,7 @@ class About extends React.Component {
             data-aos-delay="0"
           >
             <p className="color_blanco">
-              -- Always <b>Learning --</b>
+              -- Desarrollo y <b>Diseño --</b>
             </p>
           </div>
         </div>

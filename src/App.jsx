@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Inicio from "./pages/Inicio";
-import Galeria from "./pages/Galeria";
+import Mugs from "./pages/Mugs";
+import Logos from "./pages/Logos";
 
 class App extends React.Component {
   render() {
@@ -9,7 +10,8 @@ class App extends React.Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Inicio} />
-          <Route exact path="/Galeria" component={Galeria} />
+          <Route exact path="/Mugs" component={Mugs} />
+          <Route exact path="/Logos" component={Logos} />
         </Switch>
       </BrowserRouter>
     );

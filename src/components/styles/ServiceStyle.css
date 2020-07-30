@@ -4,7 +4,7 @@
   margin: 1rem auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
-  background: #222831;
+  background: black;
   line-height: 1.4;
   font-family: sans-serif;
   border-radius: 5px;
@@ -55,24 +55,12 @@
   font-size: 0.9rem;
 }
 .blog-card .details a {
-  text-decoration: dotted underline;
+  text-decoration: none;
 }
 .blog-card .details ul li {
   display: inline-block;
 }
-.blog-card .details .author:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f007";
-}
-.blog-card .details .date:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f133";
-}
-.blog-card .details .tags ul:before {
-  font-family: FontAwesome;
-  content: "\f02b";
+.icono {
   margin-right: 10px;
 }
 .blog-card .details .tags li {
@@ -84,7 +72,7 @@
 .blog-card .description {
   color: #eeeeee;
   padding: 1rem;
-  background: #222831;
+  background: black;
   position: relative;
   z-index: 1;
 }
@@ -93,7 +81,7 @@
   font-family: Poppins, sans-serif;
 }
 .blog-card .description h2 {
-  color: #32e0c4;
+  color: #c81912;
   line-height: 1;
   margin: 0;
   font-size: 1.7rem;
@@ -109,13 +97,11 @@
   text-align: right;
 }
 .blog-card .description .read-more a {
-  color: #32e0c4;
+  color: #c81912;
   display: inline-block;
   position: relative;
 }
 .blog-card .description .read-more a:after {
-  content: "\f061";
-  font-family: FontAwesome;
   margin-left: -10px;
   opacity: 0;
   vertical-align: middle;
@@ -136,7 +122,7 @@
   content: "";
   position: absolute;
   height: 5px;
-  background: #32e0c4;
+  background: #c81912;
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
@@ -157,10 +143,10 @@
     flex-basis: 60%;
   }
   .blog-card .description:before {
-    transform: skewX(-3deg);
+    transform: skewX(-2deg);
     content: "";
-    background: #222831;
-    width: 30px;
+    background: #c81912;
+    width: 15px;
     position: absolute;
     left: -10px;
     top: 0;
@@ -236,4 +222,16 @@
 }
 .photo2 {
   background-image: url("../../images/mug.jpg");
+}
+
+@media (max-width: 638px) {
+  .photo {
+    background-image: url("../../images/logos.png");
+  }
+  .photo2 {
+    background-image: url("../../images/mug.png");
+  }
+  .photo3 {
+    background-image: url("../../images/shirt.png");
+  }
 }

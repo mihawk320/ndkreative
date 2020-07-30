@@ -6,18 +6,39 @@ class Services extends React.Component {
       <section>
         <div className="container ">
           <h2 className="text-center mb-5 mt-3 textin" id="servicios">
-            Nuestros servicios
+            Nuestros <b>Servicios</b>
           </h2>
 
           <div className="row">
-            <Target clase="photo" titulo="Diseñamos logos" />
-            <Target clase="photo2" name="Logos" titulo="Diseñamos Mugs" />
+            <Target
+              clase="photo"
+              titulo="Diseñamos logos"
+              one="Diseños a la medida"
+              two="muy creativos, ven y"
+              three="ponle sello a tu marca"
+            />
+            <Target
+              clase="photo2"
+              titulo="Diseñamos Mugs"
+              one="Mugs creativos"
+              two="para todo tipo de regalos,"
+              three="excelente calidad"
+            />
             <Target
               clase="photo3"
-              name="Logos"
               titulo="Prendas personalizadas"
+              one="Prendas personalizadas"
+              two="enfocadas en tus gustos,"
+              three="con los mejores diseños"
             />
-            <Target clase="photo4" name="Logos" titulo="Páginas web" />
+            <Target
+              clase="photo4"
+              titulo="Páginas web"
+              one="Desarrollo de páginas web"
+              two="con las últimas tecnologías"
+              three="para el mejor rendimiento"
+              link="https://andresmora.netlify.app/"
+            />
           </div>
         </div>
       </section>

@@ -1,5 +1,12 @@
 import React from "react";
 import "./styles/ServiceStyle.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCheckCircle,
+  faTags,
+  faMagic,
+} from "@fortawesome/free-solid-svg-icons";
+
 class Target extends React.Component {
   render() {
     return (
@@ -7,26 +14,22 @@ class Target extends React.Component {
         <div className="blog-card">
           <div className="meta">
             <div className={this.props.clase}></div>
+
             <ul className="details">
               <li className="author">
-                <a href="#hero"> {this.props.name} </a>
+                <FontAwesomeIcon icon={faCheckCircle} />
+                <span> Calidad </span>
               </li>
-              <li className="tags">
-                <ul>
-                  <li>
-                    <a href="#hero">Calidad</a>
-                  </li>
-                  <li>
-                    <a href="#hero">Diseño</a>
-                  </li>
-                  <li>
-                    <a href="#hero">Excelente</a>
-                  </li>
-                  <li>
-                    <a href="#hero">Precio</a>
-                  </li>
-                </ul>
-              </li>
+              <span className="tags">
+                <li>
+                  <FontAwesomeIcon icon={faTags} className="icono" />
+                  <span>Precio</span>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faMagic} className="icono" />
+                  <span>Diseño</span>
+                </li>
+              </span>
             </ul>
           </div>
           <div className="description">
@@ -34,15 +37,15 @@ class Target extends React.Component {
             <h3>Somos tu mejor opción</h3>
             <div>
               <ul>
-                <li>Diseños personalizados</li>
-                <li>Excelentes precios</li>
-                <li>Los mejores resultados</li>
+                <li>{this.props.one}</li>
+                <li>{this.props.two}</li>
+                <li>{this.props.three}</li>
                 <li>..</li>
               </ul>
             </div>
 
             <p className="read-more">
-              <a href="#hero">Ver más</a>
+              <a href={this.props.link}>Ver</a>
             </p>
           </div>
         </div>

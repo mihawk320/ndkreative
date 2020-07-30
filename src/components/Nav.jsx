@@ -38,8 +38,54 @@ class Nav extends React.Component {
                   </Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/Mugs">
+                    Mugs
+                  </Link>
+                </li>
+
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#hero"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Prendas
+                  </a>
+                  <div
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a className="dropdown-item" href="#hero">
+                      Caballero
+                    </a>
+                    <a className="dropdown-item" href="#hero">
+                      Dama
+                    </a>
+                    <a className="dropdown-item" href="#hero">
+                      Tapabocas
+                    </a>
+                  </div>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Logos">
+                    Logos
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="https://andresmora.netlify.app/"
+                  >
+                    Páginas web
+                  </a>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/Galeria">
-                    Galeria
+                    Otros
                   </Link>
                 </li>
               </ul>

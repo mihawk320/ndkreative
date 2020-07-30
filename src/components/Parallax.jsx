@@ -6,10 +6,13 @@ class Parallax extends React.Component {
     return (
       <div className="newsletter parallax">
         <div className="contenido contenedor">
-          <p>Registrate al newsletter</p>
-          <h3>GOEPAV</h3>
-          <a href="formulario.php" className="btn btn-outline-light">
-            Ver trabajos
+          <p>Contáctanos por whatsapp</p>
+          <h2>NDKreative</h2>
+          <a
+            href="https://api.whatsapp.com/send?phone=573205365990"
+            className="btn btn-outline-light"
+          >
+            Ir
           </a>
         </div>
       </div>
