@@ -1,57 +1,50 @@
 import React from "react";
 import "./styles/FooterStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faGithub,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import Logo from "../images/logo.jpg";
 
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="bgDark">
-        <div className="container">
-          <img src={Logo} className="logo-footer" alt="logo" />
-          <ul className="list-inline">
-            <li className="list-inline-item footer-menu">
-              <a href="#hero">Home</a>
-            </li>
-            <li className="list-inline-item footer-menu">
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li className="list-inline-item footer-menu">
-              <a href="#sobre_mi">Sobre mi</a>
-            </li>
-            <li className="list-inline-item footer-menu">
-              <a href="#habilidades">Habilidades</a>
-            </li>
-            <li className="list-inline-item footer-menu">
-              <a href="#contacto">Contacto</a>
-            </li>
-          </ul>
-          <ul className="list-inline">
-            <li className="list-inline-item">
-              <a
-                href="https://www.instagram.com/andres_hammet/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a
-                href="https://www.facebook.com/andresmoraxd"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faFacebookF}
-                  data-aos-duration="1000"
-                  data-aos="fade-down"
-                />
-              </a>
-            </li>
-          </ul>
-          <small>©2020 All Rights Reserved. Created by NDKreative</small>
+      <footer className="footer-distributed">
+        <div className="footer-right">
+          <a href="#hero">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="#hero">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="#jerp">
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
+          <a href="#hero">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
+
+        <div className="footer-left">
+          <p className="footer-links">
+            <a href="#main">Inicio</a>
+
+            <a href="#servicios">Mugs</a>
+
+            <a href="#quienes_somos">Páginas web</a>
+
+            <a href="#ubicacion">Logos</a>
+
+            <a href="formulario.php">Otros</a>
+          </p>
+
+          <p>NDKreative &copy; 2020</p>
+        </div>
+        <div className="logo__footer">
+          <img src={Logo} className="image_logo_footer" alt="logo_footer" />
         </div>
       </footer>
     );

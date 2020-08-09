@@ -32,6 +32,7 @@ class About extends React.Component {
           </div>
           <img
             src={profile}
+            loading="lazy"
             alt="yo"
             className="img-fluid my-auto"
             id="foto"

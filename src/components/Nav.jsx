@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/logo.jpg";
-import Menu from "../images/menu.png";
+import Menu from "../images/menu.svg";
 
 import "./styles/NavStyle.css";
 
@@ -84,7 +84,7 @@ class Nav extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Galeria">
+                  <Link className="nav-link" to="/Otros">
                     Otros
                   </Link>
                 </li>

@@ -4,7 +4,7 @@ import "./styles/ParallaxStyle.css";
 class Parallax extends React.Component {
   render() {
     return (
-      <div className="newsletter parallax">
+      <div className="newsletter parallax" loading="lazy">
         <div className="contenido contenedor">
           <p>Contáctanos por whatsapp</p>
           <h2>NDKreative</h2>

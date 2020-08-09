@@ -3,7 +3,7 @@ import React from "react";
 class Info extends React.Component {
   render() {
     return (
-      <section id="sobre_mi" className="fondo">
+      <article id="sobre_mi" className="fondo">
         <div className="container">
           <div className="content-center">
             <h2
@@ -19,7 +19,7 @@ class Info extends React.Component {
             </p>
           </div>
         </div>
-      </section>
+      </article>
     );
   }
 }

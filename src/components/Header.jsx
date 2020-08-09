@@ -18,10 +18,20 @@ class Header extends React.Component {
           >
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src={Banner} className="d-block w-100" alt="banner" />
+                <img
+                  src={Banner}
+                  className="d-block w-100"
+                  alt="banner"
+                  loading="lazy"
+                />
               </div>
               <div className="carousel-item">
-                <img src={Banner2} className="d-block w-100" alt="banner2" />
+                <img
+                  src={Banner2}
+                  className="d-block w-100"
+                  alt="banner2"
+                  loading="lazy"
+                />
               </div>
 
               <div className="overlay">
