@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/FooterStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,31 +15,53 @@ class Footer extends React.Component {
     return (
       <footer className="footer-distributed">
         <div className="footer-right">
-          <a href="#hero">
+          <a
+            href="https://www.facebook.com/nd_kreative-109215954215772/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="#hero">
+          <a
+            href="https://www.instagram.com/nd_kreative/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="#jerp">
+          <a
+            href="https://api.whatsapp.com/send?phone=573205365990"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
-          <a href="#hero">
+          <a
+            href="https://github.com/mihawk320"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
 
         <div className="footer-left">
           <p className="footer-links">
-            <a href="#main">Inicio</a>
+            <Link to="/">Inicio</Link>
 
-            <a href="#servicios">Mugs</a>
+            <Link to="/Mugs">Mugs</Link>
 
-            <a href="#quienes_somos">Páginas web</a>
+            <a
+              href="https://andresmora.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Páginas web
+            </a>
 
-            <a href="#ubicacion">Logos</a>
+            <Link to="/Logos">Logos</Link>
 
-            <a href="formulario.php">Otros</a>
+            <Link to="/Otros">Otros</Link>
           </p>
 
           <p>NDKreative &copy; 2020</p>

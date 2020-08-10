@@ -79,6 +79,8 @@ class Nav extends React.Component {
                   <a
                     className="nav-link"
                     href="https://andresmora.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Páginas web
                   </a>

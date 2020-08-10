@@ -17,17 +17,17 @@ class Target extends React.Component {
 
             <ul className="details">
               <li className="author">
-                <FontAwesomeIcon icon={faCheckCircle} />
-                <span> Calidad </span>
+                <FontAwesomeIcon icon={faCheckCircle} className="icono" />
+                <span>Gran calidad </span>
               </li>
               <span className="tags">
                 <li>
                   <FontAwesomeIcon icon={faTags} className="icono" />
-                  <span>Precio</span>
+                  <span>Excelente precio</span>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faMagic} className="icono" />
-                  <span>Diseño</span>
+                  <span>El mejor diseño</span>
                 </li>
               </span>
             </ul>
